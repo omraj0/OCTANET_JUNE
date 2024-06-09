@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="Images/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d40ef2de68.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo-om.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#coding">Coding</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Hii, My name is</p>
+                <h1><span>Om</span> Raj</h1>
+                <div class="sub-header-text">
+                    <div style="font-size:5vw;" class="role-text">I'm a <span class="role"></span></div>
+                    <h6>I'm a Electronics and Communication Engineering student having keen interest in <span>Web Development</span> and <span>Problem Solving.</span><br>Currently, in the final year of pursuing B.Tech at <span>NIT Patna</span>, India and actively looking for any new job opportunities.</h6>
+                </div>
+
+                <div class="btn-pink-head">
+                    <a href="#contact"><button class="btn-pink">Hire Me</button></a>
+                    <a href="Images/my-cv.pdf"><button class="btn-pink">Resume</button></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- -------------------- About ---------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Passport.png" alt="image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm a Pre-Final year student at the National Institute of Technology Patna, pursuing my B.Tech degree in ECE. I'm a fast learner and a keen observer, always willing to learn new things. I have a strong passion for front-end web development and I am skilled in creating engaging and user-friendly websites. Currently I'm working on my skills in Backend Web Development ans frameworks like React.js and Node.js. In addition to my web development skills, I am drawn to the world of competitive programming and problem-solving. I relish the intellectual challenges they present and enjoy tackling complex challenges.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-end Web Developer</span><br>Proficient in front-end web development by using HTML, CSS, JavaScript and Bootstrap</li>
+                            <li><span>Problem Solver</span><br>Proficient problem solver with a strong background in data structures and algorithms.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - current</span><br>Developing fully functional and responsive web applications and forms</li>
+                            <li><span>2022 - current</span><br>Solved 400+ data structures and algorithms based problems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2018</span><br>Completed 10th grade with 95.4% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2019 - 2020</span><br>Completed 12th grade with 94.0% from DAV Public School Cantonment Area, Gaya</li>
+                            <li><span>2021 - current</span><br>Currently pursuing Bachelor of Technology in ECE at National Institute of Technology, Patna, Bihar (India)</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------   Services    -------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Experienced front-end web developer proficient in HTML, CSS, and JavaScript with a strong focus on creating visually appealing, responsive, and user-friendly websites. Skilled in front-end frameworks and passionate about optimizing web performance and problem solver.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Problem Solver</h2>
+                    <p>Experienced in tackling complex coding challenges and optimizing solutions for problems. Skilled in algorithmic thinking and debugging, consistently delivering innovative and practical solutions to a wide range of DSA problems.</p>
+                    <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-wordpress-simple"></i>
+                    <h2>WordPress Developer</h2>
+                    <p>Aspiring WordPress developer with a foundational understanding of HTML, CSS, and WordPress. Eager to learn and contribute to web development projects. Detail-oriented and a quick learner with a strong commitment to creating user-friendly websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-----------------------   Coding Profiles    -------------------------->
+    <div id="coding">
+        <div class="container">
+            <h1 class="sub-title">My Coding Profiles</h1>
+
+            <div class="coding-timeline">
+                <div class="coding-timeline-list">
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://codeforces.com/profile/omraj0100" target="_blank"><img src="Images/codeforces.png" class="codeforces"></a>
+                            <a href="https://codeforces.com/profile/omraj0100" target="_blank"><h2>Codeforces</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://www.codechef.com/users/om_010" target="_blank"><img src="Images/codechef.png" class="codechef"></a>
+                            <a href="https://www.codechef.com/users/om_010" target="_blank"><h2>CodeChef</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://leetcode.com/om_0100/" target="_blank"><img src="Images/leetcode.png" class="leetcode"></a>
+                            <a href="https://leetcode.com/om_0100/" target="_blank"><h2>Leetcode</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank"><img src="Images/geeksforgeeks.png" class="geeksforgeeks"></a>
+                            <a href="https://auth.geeksforgeeks.org/user/omraj0100/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" target="_blank"><h2>GeeksforGeeks</h2></a>
+                        </div>
+                    </div>
+                    <div class="coding-timeline-item">
+                        <div>
+                            <a href="https://www.hackerrank.com/profile/omraj0100" target="_blank"><img src="Images/hackerrank.png" class="hackerrank"></a>
+                            <a href="https://www.hackerrank.com/profile/omraj0100" target="_blank"><h2>HackerRank</h2></a>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+
+
+    <!------------------------  Portfolio   ------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="timeline-list">
+                    <div class="timeline-item" style="--accent-color:#1B5F8C">
+                        <div class="date">Personal Portfolio</div>
+                        <!-- <div class="title">Title 1</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-1.png">
+                                <div class="layer">
+                                    <p>My "Personal Portfolio" website is a showcase of my work as a front-end web developer. It offers an elegant, user-friendly design, highlights my projects, and provides insights into my skills and background. Visit to explore my work and get to know me better.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-bootstrap-logo-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="#header"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/myPortfolio" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#FBCA3E">
+                        <div class="date">Sorting Visualizer</div>
+                        <!-- <div class="title">Title 2</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-4.png">
+                                <div class="layer">
+                                    <!-- <h3>Tic Tac Toe</h3> -->
+                                    <p>The "Sorting Visualizer" is a dynamic web application that showcases various sorting algorithms through interactive visualizations. The visual representation presents randomly generated numbers as vertical bars. As the sorting algorithm progresses, the bars move and change color to illustrate the sorting process.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-c-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Sorting-Visualizer/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Sorting-Visualizer/tree/main" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#4CADAD">
+                        <div class="date">Weather App</div>
+                        <!-- <div class="title">Title 4</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-5.png">
+                                <div class="layer">
+                                    <!-- <h3>All In One Widget</h3> -->
+                                    <p>Weather web application created using React.js, TailwindCSS and API integration, offering real-time weather updates including temperature, humidity, wind speed, sunrise and sunset time of a particular city by searching the city in seach box.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-api-100.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Weather-App" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#E24A68">
+                        <div class="date">GIF Generator</div>
+                        <!-- <div class="title">Title 1</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-6.png">
+                                <div class="layer">
+                                    <p>Developed an interactive GIF generator website using ReactJS, Tailwind CSS, and the Giphy API. Users can search any GIFs through search box which fetches data from Giphy's API.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-react-native-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-giphy-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/GIF_Generator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/GIF_Generator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#1B5F8C">
+                        <div class="date">Tic Tac Toe</div>
+                        <!-- <div class="title">Title 3</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-3.png">
+                                <div class="layer">
+                                    <!-- <h3>Tic Tac Toe</h3> -->
+                                    <p>My "Tic Tac Toe" game is a web-based implementation of the classic two-player game. Built using HTML, CSS, JavaScript and ReactJS. It offers an interactive and enjoyable gaming experience. The game features responsive design and a user-friendly interface, making it a great way to pass the time and enjoy a timeless challenge.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-tailwind-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Tic-Tac-Toe/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Tic-Tac-Toe" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item" style="--accent-color:#41516C">
+                        <div class="date">All In One Widget</div>
+                        <!-- <div class="title">Title 4</div> -->
+                        <div class="descr">
+                            <div class="work">
+                                <img class="work-img" src="Images/work-2.png">
+                                <div class="layer">
+                                    <!-- <h3>All In One Widget</h3> -->
+                                    <p>My "All-in-One Widget" is a versatile digital tool I developed, combining essential features to simplify user's daily routines. This widget seamlessly integrates a digital clock, analog clock, day and date display, a calendar, and a to-do list, providing a single, accessible interface for time management, scheduling, and task tracking.</p>
+                                    <div class="icons-lang">
+                                        <img class="icons-lang-img" src="Images/icons8-html-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-css-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-js-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-bootstrap-logo-144.png" alt="html">
+                                        <img class="icons-lang-img" src="Images/icons8-nodejs-144.png" alt="html">
+                                    </div>
+                                    <div class="icons-links">
+                                        <a href="https://omraj0.github.io/Widget/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/omraj0/Widget" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------------------------  Contact  ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=omraj0100@gmail.com" target="_blank">omraj0100@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href=”tel:8789195638″ target="_blank">8789195638</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/om-raj-915695228/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/omraj0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/edgy._.omi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://m.facebook.com/profile.php/?id=100023227296794" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><i class="fa-solid fa-om"></i> Copyright © Om Raj | All rights are reserved <i class="fa-solid fa-om"></i></p>
+        </div>
+    </div>
+
+
+    <!--------------------------Scripts------------------------->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwssvPeli4FmxrtkH7PDEEcyU37bCjxGnpJcmyedAmelCYPM9vCxxZywztXpeAB0F0I/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+    </script>
+
+
+    <script>
+        window.onscroll = function() {myFunction()};
+
+    var navbar = document.querySelector("nav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script>
+        var typeData = new Typed(".role", {
+            strings: [
+                "Full Stack Developer",
+                "Web Developer",
+                "Backend Developer",
+                "Problem Solver",
+            ],
+            loop: true,
+            typeSpeed: 120,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+
+
+<script>
+    (function () {
+        "use strict";
+
+        // define variables
+        var items = document.querySelectorAll(".coding-timeline .coding-timeline-item");
+
+        // check if an element is in viewport
+        // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function callbackFunc() {
+            for (var i = 0; i < items.length; i++) {
+                if (isElementInViewport(items[i])) {
+                    items[i].classList.add("in-view");
+                }
+            }
+        }
+
+        // listen for events
+        window.addEventListener("load", callbackFunc);
+        window.addEventListener("resize", callbackFunc);
+        window.addEventListener("scroll", callbackFunc);
+    })();
+
+</script>
+
+
+</body>
+</html>
